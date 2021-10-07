@@ -6,5 +6,5 @@
     '</div></div></div>'
   }
 function test(){
-	alert("test")
+	alert("test	")
 }

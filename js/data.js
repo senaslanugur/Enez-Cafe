@@ -5,7 +5,7 @@ var data =
       "manu_name":"Karışık Tost Menü",
       "details":"Patates Kızartması ve İçecek",
       "price":25,
-      "photo_name":"http://voswosbistro.com/Dosya/651a7dd7-e7ee-43d9-8007-a9356a35de3d.png"
+      "photo_name":"http://www.salmanpastanesi.com/Assets/Image/urunler/tost/karisik.png"
     },
     {
       "manu_name":"Kavurmalı Tost Menü",
