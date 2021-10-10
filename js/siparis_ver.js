@@ -64,11 +64,10 @@ function siparis_son(){
     var bilgiler = JSON.parse(`${localStorage.getItem(keys[k])}`);
     mesaj += " *Urun Adi:* "+ keys[k] + " *Urun Miktarı:* "+(bilgiler.urun_adedi)+"%0a"
   }
-  mesaj += "*Alici Adi Soyadi:* "+ad_soyad+"%0a" 
-  mesaj += "*Alici Adres:* "+adres+"%0a"
+  mesaj += " *Alici Adi Soyadi:* "+ad_soyad+"%0a" 
+  mesaj += " *Alici Adres:* "+adres+"%0a"
   mesaj +=" *Toplam Fiyat:* " + toplam 
 
-alert(mesaj)
   location.href = mesaj;
 }
 
