@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="liman Büfe Enez için Tasarlanmıştır" />
         <meta name="author" content="senaslanbilisim" />
-        <title>Liman Büfe - Ana Yemekler</title>
+        <title>Liman Büfe - Siparişi Tamamla</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
         <script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -109,7 +110,17 @@
                       </tbody>
 
                   </table>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Alıcı Ad Soyad</label>
+    <input type="text" class="form-control" id="ad_soyad" placeholder="Alıcı Ad Soyad">
+    <small id="emailHelp" class="form-text text-muted"> Siparişleriniz Whatsapp üzerinden otomatik olarak verilecektir</small>
+  </div>
+   <div class="form-group">
+    <label for="exampleInputEmail1">Sipariş Adresi</label>
+    <input type="text" class="form-control" id="adres" placeholder="Sipariş Adresi">
+    <small id="emailHelp" class="form-text text-muted"> Siparişleriniz Whatsapp üzerinden otomatik olarak verilecektir</small>
 
+  </div>
                   <button type="button" class="btn btn-success btn-lg btn-block" onclick="siparis_son()"><i class="fab fa-whatsapp"></i>
                       Sipariş Ver   <span class="glyphicon glyphicon-chevron-right"></span>
                   </button>
@@ -145,8 +156,8 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-
         <script src="js/siparis_ver.js"></script>
         <script src="js/iletisim.js"></script>
+
     </body>
 </html>
