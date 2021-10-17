@@ -24,11 +24,11 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-lg-5">
                 <img src="assets/favicon.ico"style="width:50px;height:50px;"> &nbsp;&nbsp;&nbsp;&nbsp;
-                <a class="navbar-brand" href="#!">Liman Büfe Enez</a>
+                <a class="navbar-brand" href="./index.html">Liman Büfe Enez</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Ana Sayfa</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Ana Sayfa</a></li>
                         <li class="nav-item"><a class="nav-link" onclick="iletisim()">İletişim</a></li>
                         <li class="nav-item">
                             <button class="btn btn-outline-light" type="submit" onclick="tamamla()">
@@ -156,7 +156,7 @@
                         <div class="card bg-light border-0 h-100">
                             <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
                                 <a href="./Ana_Yemekler.html">
-                                <div class="feature bg-outline-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><img src="https://img.icons8.com/external-photo3ideastudio-flat-photo3ideastudio/120/000000/external-hamburger-august-bakery-photo3ideastudio-flat-photo3ideastudio.png"/></div></a>
+                                <div class="feature bg-outline-primary bg-gradient text-white rounded-3 mb-4 mt-n4"><img src="https://img.icons8.com/office/120/000000/hamburger.png"/></div></a>
                                 <h2 class="fs-4 fw-bold">Yiyecekler</h2>
                                 <p class="mb-0">Enfes Hamburgerler, Tostlar ...</p>
 
@@ -187,6 +187,9 @@
             </div>
         </section>
         <!-- Footer-->
+<div class="faba" id="sepet" onclick="tamamla()"><i class="fas fa-shopping-cart fa-xs"></i></div>
+
+
         <footer class="py-5 bg-dark">
           <div class="d-flex justify-content-center" >
             <a
@@ -213,13 +216,7 @@
         <!-- Core theme JS-->
         <script src="js/siparis_ver.js"></script>
         <script src="js/iletisim.js"></script>
-        <script type="text/javascript">
-            function next(){
-                    jSuites.notification({
-                            name: 'Enez Büfe Liman',
-                            message: 'Menüler Eklenecektir.',
-                    })
-            }
-        </script>
+        <script type="text/javascript" src="js/sepet.js"></script>
+
     </body>
 </html>
