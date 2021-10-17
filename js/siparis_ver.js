@@ -1,4 +1,3 @@
-
 var goruntu = document.getElementById("siparis_tamamla");
 goruntu.innerHTML = localStorage.length
 
@@ -38,6 +37,8 @@ function siparis_ekle(bilgiler){
         name: 'Siparişiniz Eklenmiştir.',
         message: urun_adi,
     })
+    var sepet = document.getElementById("sepet");
+    sepet.style.visibility='visible';
   var goruntu = document.getElementById("siparis_tamamla");
   goruntu.innerHTML = localStorage.length
 }
@@ -64,9 +65,9 @@ function siparis_son(){
     var bilgiler = JSON.parse(`${localStorage.getItem(keys[k])}`);
     mesaj += " *Urun Adi:* "+ keys[k] + " *Urun Miktarı:* "+(bilgiler.urun_adedi)+"%0a"
   }
-  mesaj += " *Alici Adi Soyadi:* "+ad_soyad+"%0a" 
+  mesaj += " *Alici Adi Soyadi:* "+ad_soyad+"%0a"
   mesaj += " *Alici Adres:* "+adres+"%0a"
-  mesaj +=" *Toplam Fiyat:* " + toplam 
+  mesaj +=" *Toplam Fiyat:* " + toplam
 
   location.href = mesaj;
 }
@@ -76,4 +77,3 @@ function sil(test){
  window.localStorage.removeItem(test.id);
  location.reload();
 }
-
